@@ -11,7 +11,7 @@ namespace RabbitMQ_Mensageria.Controllers
     [ApiController]
     public class MessagesController : ControllerBase
     {
-        private const string QUEUE_NAME = "messages";
+        private const string QUEUE_NAME = "messagess";
         private readonly ConnectionFactory _factory;
         public MessagesController()
         {
@@ -48,6 +48,6 @@ namespace RabbitMQ_Mensageria.Controllers
                 }
             }
             return Accepted();
-        }
+            }
     }
 }
